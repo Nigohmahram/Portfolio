@@ -1,0 +1,505 @@
+/* FONTS  */
+@font-face {
+     font-family: 'Noto Serif KR';
+     src: url('../fonts/NotoSerifKR-Medium-Alphabetic.woff2') format('woff2'),
+         url('../fonts/NotoSerifKR-Medium-Alphabetic.woff') format('woff');
+     font-weight: 500;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'Noto Serif KR';
+     src: url('../fonts/') format('woff2'),
+         url('../fonts/NotoSerifKR-Regular-Alphabetic.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'Noto Serif KR';
+     src: url('../fonts/NotoSerifKR-Bold-Alphabetic.woff2') format('woff2'),
+         url('../fonts/NotoSerifKR-Bold-Alphabetic.woff') format('woff');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'Dancing Script';
+     src: url('../fonts/DancingScript-Regular.woff2') format('woff2'),
+         url('../fonts/DancingScript-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+ }
+/* ROOT  */
+/* GLOBALL */
+
+html {
+     height: 100%;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+     box-sizing: border-box;
+}
+
+body {
+     display: flex;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+     flex-direction: column;
+     background-color: #014E56;
+     color: white;
+     font-family: "Dancing Script" "Noto Serif KR", sans-serif ;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 1.5;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+/* AUTOFILL-STYLES */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+     border-color: transparent;
+     -webkit-text-fill-color: inherit;
+     -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+/* PLACEHOLDER-STYLES */
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+     color: rgba(52, 49, 61, 0.5);
+     opacity: 1;
+}
+
+.visually-hidden {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+}
+
+/* CONTAINER  */
+.container {
+     width: 100%;
+     max-width: 1100px;
+     padding-left: 50px;
+     padding-right: 50px;
+     margin-left: auto;
+     margin-right: auto;
+}
+.main-content {
+     flex-grow: 1;
+}
+#dark-icon{
+     fill: #fff;
+}
+.navbar-darkmode{
+     margin-top: 10px;
+     margin-left: 60px;
+     cursor: pointer;
+}
+
+.navbar-darkmode__icon{
+     transition: all 0.5s ease;
+}
+.navbar-darkmode__icon:hover{
+     transform: scale(1.2);
+}
+.navbar-darkmode__icon:active{
+     transform: scale(1);
+     opacity: 0.4;
+}
+.light{
+  background-image: url(../img/42.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+     display: flex;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+     flex-direction: column;
+     color: black;
+     font-family: "Dancing Script" "Noto Serif KR", sans-serif ;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 1.5;
+}
+.dark{
+  /* background-image: url(../img/bg-dark.jpg); */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+     display: flex;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+     flex-direction: column;
+     color: white;
+     font-family: "Dancing Script" "Noto Serif KR", sans-serif ;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 1.2;
+}
+
+.max-width {
+  max-width: 1300px;
+  margin: auto;
+}
+/* = = = navbar = = = */
+.navbar {
+  background-color: #111111c8;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 9px 12px rgba(0, 0, 0, 0.7);
+  font-family: 'Kanit', sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  padding: 15px 0;
+  background: aqua;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: rgb(141, 141, 141);
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.logo{
+  margin-left: 50px;
+  text-shadow: #FC0 1px 0 10px;
+}
+.navbar .logo a span {
+  color: #014E56;
+  transition: all 0.5s ease;
+}
+.navbar.sticky .logo a span {
+  color: rgb(133, 109, 109);
+}
+.navbar .menu li {
+  list-style: none;
+  text-shadow: black 0px 4px;
+}
+.navbar .menu li a {
+  display: block;
+  color: white;
+  z-index: 999;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+  letter-spacing: 3px;
+  transition: 0.5s ease;
+}
+.navbar .menu li a:hover {
+  color: aqua;
+  transform: scale(1.1);
+}
+
+/* SITE HEADER  */
+.site-header{
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 7%, 59%, 0.769);
+  position: fixed;
+}
+
+.main_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('../img/42.png') ;
+  height: 100vh;
+  color: rgb(141, 141, 141);
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Kanit', sans-serif;
+}
+.site-header__container {
+     display: flex;
+}
+.navbar{
+  display: flex;
+}
+.max-width{
+  display: flex;
+}
+.menu{
+  display: flex;
+}
+.site-header__language {
+     display: flex;
+}
+.site-header__light {
+     display: flex;
+}
+
+/* SITE-HEADER-USER */
+.site-header__user {
+     margin-top: 100px;
+}
+.user {
+     display: flex;
+}
+.user__img {
+     width: 200px;
+     height: 230px;
+}
+.user__face {
+     margin-left: 100px;
+     width: 250px;
+     letter-spacing: 2px;
+}
+.user__face-block{
+     text-shadow: 0 3px 0 black;
+     font-weight: 500;
+     font-size: 18px;
+}
+.user__face-block-span{
+     margin-left: 15px;
+     font-size: 18px;
+     font-weight: 500;
+     text-shadow: 0 3px 0 black;
+}
+.user__face-block-span:nth-child(1){
+     margin-left: 10px;
+}
+.user__mesenger {
+     display: flex;
+     flex-direction: column;
+     margin-left: 150px;
+}
+.user__mesenger-link {
+     margin-top: 13px;
+     font-size: 18px;
+     color: #fff;
+     text-decoration: none;
+     letter-spacing: 3px;
+     transition: 0.5s ease;
+}
+.user__mesenger-link:hover{
+     color: #aaa;
+     letter-spacing: 4px;
+}
+.user__mesenger-link:active{
+     opacity: 0.5;
+     letter-spacing: 5px;
+}
+/* Skills  */
+
+/* 자기소개 */
+.user__study{
+     margin-left: 64px;
+     margin-top: -52px;
+}
+.user__block-skill{
+     width: 520px;
+     margin-bottom: 15px;
+     font-size: 27px;
+     letter-spacing: 2px;
+     text-shadow: 0 3px 0 black;
+}
+.user__study-heading {
+     font-size: 27px;
+     font-weight: 500;
+     letter-spacing: 2px;
+     margin-bottom: 30px;
+     text-shadow: 0 3px 0 black;
+}
+.user__study-title {
+     width: 690px;
+     flex-wrap: wrap;
+     background-color:  rgba(0, 0, 255, 0.04);
+     border: 2px solid rgba(0, 0, 255, 0.221);
+     border-radius: 10px;
+     padding: 10px;
+}
+.user__block{
+     display: flex;
+}
+.user__block-skills{
+     width: 500px;
+}
+.info{
+  margin-bottom: 3px;
+}
+.info__html{
+  width: 40px;
+  height: 40px;
+     padding: 0;
+     margin: 0;
+     margin-right: 8px;
+     margin-bottom: 2px;
+     object-fit: contain;
+}
+.info span{
+  display: flex;
+  flex-direction: inherit;
+  align-items: center;
+     text-transform: uppercase;
+     font-size: 16px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     text-shadow: 0 3px 0 black;
+
+}
+/* PROJECT-PAGE */
+.box {
+  position: relative;
+  width: 80%;
+  height: 500px;
+  background: #dddddda4;
+  border-radius: 4px;
+  padding: 2em 1.5em;
+  color: rgba(0,0,0, .8);
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.5;
+  margin: 60px auto;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+}
+
+.box::before,
+.box::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  transform: rotate(-3deg);
+}
+
+.box::after {
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+.main-content_project{
+     margin-top: 100px;
+     display: flex;
+     justify-content: center;
+     text-transform: uppercase;
+     font-size: 30px;
+     font-weight: normal;
+     text-shadow: black 0px 3px;
+}
+
+/* PROJECT */
+.project{
+     display: flex;
+     margin: 0;
+     padding: 0;
+     margin-top: 60px;
+}
+.project__img{
+     display: inline-block;
+     width: 650px;
+     height: 450px;
+     box-shadow: 0 1px 5px #00000095, 0 5px 30px #00000096;
+     border-radius: 5px;
+}
+.project__content {
+     margin-right: 50px;
+}
+.project__zoomin {
+     cursor: zoom-in;
+}
+.project__title {
+     margin-top: 20px;
+     width: 450px;
+     height: 100%;
+     text-align: start;
+     text-shadow: black 0px 3px;
+     font-family: sans-serif;
+     letter-spacing: 1px;
+}
+.product__heading {
+     font-family: sans-serif;
+     font-size: 29px;
+}
+
+.product__heading-title {
+     text-shadow: black 0px 2px;
+}
+.project__link {
+     margin-bottom: 20px;
+}
+.project-link{
+     display: flex;
+     text-align: center;
+     align-items: center;
+     text-decoration: none;
+     color: #fff;
+     text-shadow: black 0px 2px;
+     font-size: 18px;
+     font-weight: 500;
+}
+.project__link-github {
+     margin-top: 10px;
+
+}
+.project__link-repo {
+     margin-right: 10px;
+}
+.project__heading-specifik {
+     font-family: sans-serif;
+     text-shadow: black 0px 2px;
+     font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {}
