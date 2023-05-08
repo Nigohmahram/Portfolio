@@ -3,4 +3,8 @@ window.addEventListener('DOMContentLoaded', () => {
      navbarDarkIcon.addEventListener('click', function () {
           document.body.classList.toggle('light')
      });
+
+
+     // PREVIEW
+
 });

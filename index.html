@@ -11,14 +11,7 @@
      <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body >
-
-
-<!-- = = = scroll = = = -->
-<div class="scroll_top">
-  <i class="fas fa-angle-up"></i>
-</div>
-<!-- = = = scroll = = = -->
+<body>
 
 <!-- = = = navbar = = = -->
 <nav class="navbar">
@@ -27,7 +20,7 @@
       <ul class="menu">
           <li><a href="#about" class="menu-btn">About Me</a></li>
           <li><a href="#skills" class="menu-btn">Skills</a></li>
-          <li><a href="#teams" class="menu-btn">Project</a></li>
+          <li><a href="#project" class="menu-btn">Project</a></li>
           <li><a href="#contact" class="menu-btn">Contact</a></li>
       </ul>
       <div class="navbar-darkmode">
@@ -36,8 +29,8 @@
   </div>
 </nav>
 <!-- = = = navbar = = = -->
-     <main class="main-section">
-          <header class="site-header__user">
+     <main class="main-section" id="about">
+          <header class="site-header__user" id="about">
                <div class="container">
                     <div class="user">
                          <img class="user__img" src="./img/user-img.jpg" alt="User IMG" width="200" height="230">
@@ -48,13 +41,6 @@
                               <p class="user__face-block">대학교:         <span class="user__face-block-span">우석대학교</span></p>
                               <p class="user__face-block">전화번호:<span class="user__face-block-span">010 5692 5066</span></p>
                          </div>
-                         <div class="user__mesenger">
-                              <a class="user__mesenger-link" href="https://github.com/Nigohmahram" class="user__mesenger-link">GitHub</a>
-                              <a class="user__mesenger-link" href="mailto:usmonovkojiakbar27@gmail.com" class="user__mesenger-link">Email</a>
-                         <a class="user__mesenger-link" href="https://app.netlify.com/teams/nigohmahram/overview" class="user__mesenger-link">Netlify</a>
-                              <a class="user__mesenger-link" href="https://twitter.com/home" class="user__mesenger-link">Twitter</a>
-                              <a class="user__mesenger-link" href="https://codepen.io/trending" class="user__mesenger-link">Codepen</a>
-                         </div>
                     </div>
                </div>
           </header>
@@ -64,25 +50,25 @@
                     <div class="user__block">
                          <div class="user__block-skills">
                          <div class="info">
-                              <span><img class="info__html" src="img/html5-logo-png-transparent-5.png" alt="Html" width="30" height="30">&nbsp;HTML</span>
+                              <span><img class="info__html" src="img/html-5-logo.svg" alt="Html" width="30" height="30">&nbsp;HTML</span>
                           </div>
                          <div class="info">
-                              <span><img class="info__html" src="img/logo_css.9c1431e3.png" alt="Html" width="20" height="20">&nbsp;CSS & SASS</span>
+                              <span><img class="info__html" src="img/css-3-logo.svg" alt="Html" width="20" height="20">&nbsp;CSS & SASS</span>
                           </div>
                          <div class="info">
-                              <span><img class="info__html" src="img/js.png" alt="Html" width="20" height="18">&nbsp;JavaScript</span>
+                              <span><img class="info__html" src="img/javascript-logo.svg" alt="Html" width="40" height="40">&nbsp;JavaScript</span>
                           </div>
                           <div class="info">
-                          <span><img class="info__html" src="img/react.png" alt="Html" width="25" height="25">&nbsp;React</span>
+                          <span><img class="info__html" src="img/react-logo.svg" width="25" height="25">&nbsp;React</span>
                           </div>
                          <div class="info">
-                              <span><img class="info__html" src="img/614214.png" alt="Html" width="25" height="25">&nbsp;GitHub</span>
+                              <span><img class="info__html" src="img/logo-github.svg" alt="Html" width="25" height="25">&nbsp;GitHub</span>
                           </div>
                          <div class="info">
-                              <span><img class="info__html" src="img/bootstrap.png" alt="Html" width="30" height="30">&nbsp;Bootstrap & jQuery</span>
+                              <span><img class="info__html" src="img/bootstrap-logo.svg" width="30" height="30">&nbsp;Bootstrap & jQuery</span>
                           </div>
                          <div class="info">
-                              <span><img class="info__html" src="img/pugjs.png" alt="Html" width="30" height="30">&nbsp;Figma & Pug</span>
+                              <span><img class="info__html" src="img/pug-logo.svg" alt="Html" width="40" height="40">&nbsp;Figma & Pug</span>
                           </div>
                          </div>
                          <div class="user__study">
@@ -97,43 +83,121 @@
           </section>
      </main>
      <!-- MAIN-CONTENT -->
-     <main class="main-content">
-      <!-- PRODUCT-PAGE -->
+     <main class="main-content" id="project">
       <div class="product-page">
            <div class="main-content_project">project</div>
-           <div class=" container">
-               <div class="project">
-                    <div class="project__content">
-                         <a class="project__zoomin" href=""><img class="project__img" src="img/sneacers.png" alt="Project Img" width="700" height="500"></a>
-                    </div>
-                    <div class="project__title">
-                         <h1 class="product__heading">Ecommerce product page</h1>
-                         <h3 class="product__heading-title">The product Ecommerce information page of the online store</h3>
-                         <div class="project__link">
-                              <div class="project__link-github">
-                                   <a class="project-link" href=""><img class="project__link-repo" src="img/receipt-outline.svg" alt="recirept" width="40" height="40">Repo</a>
-                              </div>
-                              <div class="project__link-github">
-                                   <a class="project-link" href=""><img class="project__link-repo" src="img/globe-outline.svg" width="40" height="40">Netlify</a>
-                              </div>
-                              <div class="project__link-github">
-                                   <a class="project-link" href=""><img class="project__link-repo" src="img/cloud-download-outline.svg" alt="recirept" width="40" height="40">Project Sourse</a>
-                              </div>
-                         </div>
-                         <h4 class="project__heading-specifik">Specific aspects: Dropdown menu, image gallery adjusted to whether there are products in the cart, lightbox</h4>
-                    </div>
-               </div>
-           <div class="box">Css</div>
-        <!-- PRODUCT-PAGE-GALLERY -->
-    </div>
+
       </div>
-  </main>
+     <!-- Preview -->
+     <div class="preview">
+          <div class="bgc_blue"></div>
+          <div class="container__with">
+            <div class="tabcontainer">
+              <div class="tabheader">
+                <h3>Category Of Project</h3>
+                <div class="tabheader__items">
+                  <div class="tabheader__item tabheader__item_active">Ecommerce</div>
+                  <div class="tabheader__item">Easybank</div>
+                  <div class="tabheader__item">Documentary</div>
+                  <div class="tabheader__item">Sport</div>
+                  <div class="tabheader__item">Fantastic</div>
+                  <div class="tabheader__item">Fantastic</div>
+                  <div class="tabheader__item">Fantastic</div>
+                  <div class="tabheader__item">Fantastic</div>
+                  <div class="tabheader__item">Fantastic</div>
+                  <div class="tabheader__item">Fantastic</div>
+                  <div class="tabheader__item">Fantastic</div>
+                  <div class="tabheader__item">Fantastic</div>
+
+                </div>
+          </div>
+          <div class="project">
+               <div class="project__content">
+                    <a class="project__zoomin" href=""><img class="project__img" src="img/sneacers.png" alt="Project Img" width="700" height="500"></a>
+               </div>
+               <div class="project__title">
+                    <h1 class="product__heading">Ecommerce product page</h1>
+                    <h3 class="product__heading-title">The product Ecommerce information page of the online store</h3>
+                    <div class="project__link">
+                         <div class="project__link-github">
+                              <a class="project-link" href=""><img class="project__link-repo" src="img/receipt-outline.svg" alt="recirept" width="40" height="40">Repo</a>
+                         </div>
+                         <div class="project__link-github">
+                              <a class="project-link" href=""><img class="project__link-repo" src="img/globe-outline.svg" width="40" height="40">Netlify</a>
+                         </div>
+                         <div class="project__link-github">
+                              <a class="project-link" href=""><img class="project__link-repo" src="img/cloud-download-outline.svg" alt="recirept" width="40" height="40">Project Sourse</a>
+                         </div>
+                         <div class="project__link-github">
+                              <a class="project-link" href=""><img class="project__link-repo" src="img/hourglass-outline.svg" width="40" height="40">4 hours 45 minutes</a>
+                         </div>
+                    </div>
+                    <h4 class="project__heading-specifik">Specific aspects: Dropdown menu, image gallery adjusted to whether there are products in the cart, lightbox</h4>
+               </div>
+          </div>
+              </div>
+          </div>
+     </div>
+</main>
 
 
 
+ <!-- = = = contact section = = = -->
+ <section class="contact" id="contact">
+     <div class="container">
+         <h2 class="title">Contact me</h2>
+         <div class="contact-content">
+             <div class="column left">
+                 <p class="column__text">아래 정보를 사용하여 저에게 연락하실 수 있습니다...</p>
+                 <div class="icons">
+                     <div class="row__block">
+                          <div class="row">
+                              <img class="row__icon" src="img/phonel.svg" alt="User Icon" width="40" height="40">
+                              <div class="info">
+                                  <div class="head">전화번호:</div>
+                                  <div class="sub-title"><a href="tel:+821056925066">010 5692 5066</a></div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <img class="row__icon" src="img/kakaotalk123.svg" width="50" height="50">
+                              <div class="info">
+                                  <div class="head">카카오:</div>
+                                  <div class="sub-title"><a href="#">@UsmonovKh</a></div>
+                              </div>
+                          </div>
 
-
-
+                     </div>
+                    <div class="row__block">
+                         <div class="row">
+                              <img class="row__icon" src="img/mail.svg" alt="User Icon" width="40" height="40">
+                              <div class="info">
+                                  <div class="head">이메일:</div>
+                                  <div class="sub-title"><a href="mailto:usmondev@kakao.com">usmondev@kakao.com</a></div>
+                              </div>
+                          </div>
+                          <div class="row__link">
+                              <div class="row__link-item">
+                                   <a class="row__link-item-kink" href="https://github.com/Nigohmahram"><img class="row_link-item-img" src="img/logo-github.svg" alt="logo github" width="40" height="40"></a>
+                              </div>
+                              <div class="row__link-item">
+                                   <a  href="https://app.netlify.com/teams/nigohmahram/sites"><img class="row_link-item-img" src="img/netlify-logo.svg" width="40" height="40"></a>
+                              </div>
+                              <div class="row__link-item">
+                                   <a class="row__link-item-kink" href="https://codepen.io/trending"><img class="row_link-item-img" src="img/codepen-logo.svg" width="40" height="40"></a>
+                              </div>
+                              <div class="row__link-item">
+                                   <a class="row__link-item-kink" href="https://www.facebook.com/hojiakbar.usmonov.5439"><img class="row_link-item-img" src="img/facebook-logo.svg" alt="logo github" width="40" height="40"></a>
+                              </div>
+                              <div class="row__link-item">
+                                   <a class="row__link-item-kink" href="https://twitter.com/KMaxsudovich"><img class="row_link-item-img" src="img/twitter-logo.svg" alt="logo github" width="30" height="30"></a>
+                              </div>
+                          </div>
+                    </div>
+                 </div>
+             </div>
+          </div>
+         </div>
+ </section>
      <script src="js/main.js"></script>
 </body>
 
