@@ -485,7 +485,7 @@ select:-webkit-autofill:focus {
      letter-spacing: 1px;
    }
    .tabheader__items {
-     max-width: 180px;
+     max-width: 200px;
      max-height: 400px;
      margin-top: 35px;
      padding-left: 26px;
@@ -516,7 +516,7 @@ select:-webkit-autofill:focus {
      font-weight: 600;
      font-size: 18px;
      margin-top: 10px;
-     color: rgba(13, 13, 13, 0.804);
+     color: rgb(13, 13, 13);
      cursor: pointer;
      transition: 0.3s ease;
    }
@@ -528,9 +528,10 @@ select:-webkit-autofill:focus {
      opacity: 0.8;
    }
    .tabheader__item_active {
-     color: #000;
+     color: #aaa;
      font-size: 22px;
      font-weight: 700;
+     text-shadow: black 0px 2px;
    }
 /* FOOTER */
 .contact {
@@ -615,6 +616,24 @@ select:-webkit-autofill:focus {
      text-shadow: black 0px 2px;
 
 }
+.show {
+     display: flex;
+   }
+   .hide {
+     display: none;
+   }
+   .fade {
+     animation-name: fade;
+     animation-duration: 1.5s;
+   }
+   @keyframes fade {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }
+   }
 
 
 
