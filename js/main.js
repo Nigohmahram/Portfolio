@@ -1,7 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
      const tabsParent = document.querySelector('.tabheader__items'),
           tabs = document.querySelectorAll('.tabheader__item'),
-          tabsContent = document.querySelectorAll('.project');
+          tabsContent = document.querySelectorAll('.project'),
+          elNavbarDarkmode = document.querySelector('.navbar-darkmode')
+          elNavbarDarkmode.addEventListener('click', () => {
+               document.body.classList.toggle('dark')
+               console.log(elNavbarDarkmode);
+          })
 
           function hiteTabContent() {
                tabsContent.forEach((item) => {//Real loyihaga shunday qilib class berish orqali qilinadi
